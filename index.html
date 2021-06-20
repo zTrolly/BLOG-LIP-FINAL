@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!--FONTS GOOGLE-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins&family=Wire+One&display=swap');
+    </style>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/970266a465.js" crossorigin="anonymous"></script>
+    <title>Meu Blog | Home</title>
+</head>
+<body>
+        <div class="overlay">
+              <h1>SEJA BEM-VINDO(A) AO MEU BLOG</h1>
+        </div>
+
+        <div class="wrapper">
+              <div class="logo">Breno Lopes do Carmo</div>
+              <nav class="nav">
+                    <ul>
+                          <a href="quem-eu-sou.html" class="nav-item"><li>QUEM EU SOU <span style="color:#ffd545;">🡺</span></li></a>
+
+                          <a href="projetos.html" class="nav-item"><li>PROJETOS <span style="color:#ffd545;">🡺</span></li></a>
+
+                          <a href="contato.html" class="nav-item"><li>ENTRE EM CONTATO <span style="color:#ffd545;">🡺</span></li></a>
+
+                    </ul>
+              </nav>
+              <div class="social-media">
+                    <ul>
+                          <li><a href="https://www.linkedin.com/in/breno-lopes-do-carmo/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                          <li><a href="https://www.instagram.com/o_breno_lopes/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                          <li><a href="https://github.com/zTrolly" target="_blank" ><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    </ul>
+              </div>
+              <div class="side-strip">
+                    <span>QUARENTA E DOIS</span>
+              </div>
+              <div class="header">
+                    <h1>Olá<span style="color:#ffd545;">!</span><br>Eu sou <span style="color:#ffd545;">Breno Lopes</span></h1>
+                    <p>É com muito prazer que eu o convido para explorar o meu blog. Aqui você vai encontrar um pouquinho sobre mim e o inicio da minha jornada na computação e até onde eu pretendo chegar.</p>
+              </div>
+              <div class="bottom-bar">
+                    <div class="container">
+                          <div class="row">
+                                <div class="col-lg-4">
+                                      <h6>Para qual disciplina esse blog foi feito?</h6>
+                                      <p>Esse Blog foi feito para a disciplina Laboratório de iniciação à programação mais conhecida como LIP.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <h6>Qual o objetivo desse blog?</h6>
+                                      <p>Esse blog tem como objetivo ser uma vitrine do meu aprendizado e evolução em todas as matérias desse primeiro período da faculdade.</p>
+                                </div>
+                                <div class="col-lg-4">
+                                      <h6>Por que quarenta e dois?</h6>
+                                      <p>É uma referência ao meu livro favorito "O Guia do Mochileiro Das Galáxias". Que o número quarenta e dois é a resposta para a vida.</p>
+                                </div>
+                          </div>
+                    </div>
+              </div>
+        </div>
+
+        <script type="text/javascript">
+
+        TweenMax.to(".overlay h1", 2, {
+              opacity: 0,
+              y: -60,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.to(".overlay", 2, {
+              delay: 1,
+              top: "-100%",
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".logo", 1, {
+              delay: 2.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".nav ul li", 1, {
+              delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.staggerFrom(".social-media ul li", 1, {
+              delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.from(".side-strip", 2, {
+              delay: 2.4,
+              opacity: 0,
+              y: 40,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".row", 2, {
+              delay: 2.4,
+              opacity: 0,
+              x: 40,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".row h6", 2, {
+              delay: 3,
+              opacity: 0,
+              y: 40,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".row p", 2, {
+              delay: 3.2,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".header h1", 2, {
+              delay: 3.2,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".header p", 2, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".header button", 2, {
+              delay: 3.6,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+        </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-color: var(--color1);
+  font-family: Poppins;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+:root{
+    --color1: #19181c;
+    --color2: #737284;
+    --color3: #ffd545;
+    --color4: #ff971e;
+    --color5: #d34833;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: var(--color1);
+    top: 0%;
+    color: #ffd545;
+    overflow: hidden;
+
+}
+
+.overlay h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+}
+
+.nav {
+    line-height: 40px;
+    margin: 1.2em;
+    position: absolute;
+    right: 0;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    padding-right: 36px;
+}
+
+.nav-item::after{
+    content:  '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--color3);
+    transition: width .3s;
+}
+
+.nav-item:hover::after{
+    width:  100%;
+    transition:  width .3s;
+}
+
+.header{
+    display: block;
+    height: 30vh;
+    background: url(../imgs/banner-bg4.jpg) center no-repeat;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.header h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 30px;
+}
+
+.minhas-info{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+}
+
+.minhas-info .txt{
+    color: #fff;
+    font-family: Poppins;
+    width: 500px;
+   align-self: center;
+   line-height: 25px;
+}
+
+.minhas-info .txt span{
+    text-decoration: line-through solid var(--color3);
+}
+
+
+.minhas-info .foto img{
+    width: 200px;
+    border-radius: 50%;
+    border: solid 5px var(--color3);
+}
+
+.vida-academica h2{
+    font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.escolas{
+    display: flex;
+    max-width: 769px;
+    justify-content:  center;
+    align-self: center;
+    margin:  0 auto;
+    gap: 20px;
+    margin-bottom: 35px
+}
+.cesta{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--color3);
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+    color: #fff;
+    line-height: 25px;
+}
+
+.cesta a{
+    text-decoration: none;
+    color: var(--color3);
+    transition: all .4s;
+}
+.cesta a:hover{
+    color: #ff971e;
+}
+
+.puc{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid var(--color3);
+    border-top-right-radius: 10px;
+    border-top-left-radius:10px ;
+    color: #fff;
+    line-height: 25px;
+}
+
+.puc a{
+    text-decoration: none;
+    color: var(--color3);
+    transition: all .4s;
+}
+
+.puc a:hover{
+    color: #ff971e;
+}
+
+.coisas-que-eu-gosto h2{
+    font-size: 48px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.coisa h3{
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.coisa p {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.coisa{
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: 450px;
+    justify-content: center;
+    align-self: center;
+}
+
+.coisa a{
+    color: var(--color3);
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.coisa a:hover{
+    color: var(--color4);
+}
+.coisas-que-eu-gosto{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!--FONTS GOOGLE-->
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Geo&family=Poppins&family=Wire+One&display=swap');
+    </style>
+    
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/quem-eu-sou.css">
+    <script src="https://kit.fontawesome.com/970266a465.js" crossorigin="anonymous"></script>
+    <title>Meu Blog | Quem eu sou</title>
+</head>
+<body>
+    <div class="overlay">
+        <h1>QUEM EU SOU?</h1>
+    </div>
+    
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                  <a href="index.html" class="nav-item"><li><span style="color:#ffd545;">🡸</span> HOME </li></a>
+                  <a href="projetos.html" class="nav-item"><li>PROJETOS <span style="color:#ffd545;">🡺</span></li></a>
+                  <a href="contato.html" class="nav-item"><li>ENTRE EM CONTATO <span style="color:#ffd545;">🡺</span></li></a>
+            </ul>
+         </nav>
+         <h1>UM POUCO SOBRE MIM</h1>
+    </header>
+    <section class="minhas-info">
+        <div class="txt">
+            <p>Prazer eu sou Breno Lopes mas você ja deve saber disso né... Então nessa parte do meu blog eu vou falar um pouquinho sobre mim, um pouco da minha vida acadêmica, das coisas que eu gosto e quem sabe até do que eu pretendo me tornar. Bom sem mais delongas <span>O que por si só é uma delonga</span> vai scrolando pra baixo pra saber um pouco mais sobre esse cara que ta do lado.</p>
+        </div>
+        <div class="foto">
+            <img src="./assets/imgs/eu2.jpg" alt="" srcset="">
+        </div>
+    </section>
+    <section class="vida-academica">
+        <h2>MINHA VIDA ACADÊMICA</h2>
+        <div class="escolas">
+            <div class="cesta col-6">
+                <img style="width: 100px; border-radius: 50%;" src="./assets/imgs/logoSTA.jpg" alt="">
+                <p class="vida-academica-txt">
+                No ensino fundamental e médio e estudei na escola <a href="https://www.staquino.com.br/" target="_blank">Centro Educacional São Tomás de Aquino</a> que fica em Nova Lima. Bom... eu nunca fui um aluno muito aplicado mas mantinha as minhas notas ali na média. Fiz alguns amigos nessa escola que tenho certeza que vou levar para a vida toda, além de vários momentos que moldaram quem eu sou. Não da pra saber ao certo como eu seria se eu não estudasse nessa escola mas certamente eu seria uma pessoa completamente diferente.
+                </p>
+            </div>
+            <div class="puc col-6">
+                <img style="width: 100px; border-radius: 50%;" src="./assets/imgs/logo-puc.jpg" alt="">
+                <p class="vida-academica-txt">
+                Minha jornada na <a href="http://pucminas.com.br" target="_blank">PUC-Minas</a> acabou de começar, ao menos no ano em que esse blog está sendo criado, neste exato momento estou no primeiro período de Ciência da Computação na unidade do Coração Eucarístico, então não tem muito a ser dito além de que espero me divertir bastante nesses anos que estarei na faculdade.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <section class="coisas-que-eu-gosto">
+        <h2>ALGUMAS COISAS QUE EU GOSTO <span>🡺</span></h2>
+       
+        <article class="coisa">
+            <h3>Qual gênero música você mais gosta?</h3>
+            <p>Eu sou bastante eclético, mas o que eu mais gosto é Rock, inclusive segue o link da minha <a href="https://open.spotify.com/playlist/5wP0rqsgKHfaPoULVJCWwd?si=c0b8cde820ca4faf" target="_blank">Playlist</a> no Spotify</p>
+        </article>
+        <article class="coisa">
+            <h3>Qual serie você mais gosta?</h3>
+            <p>Game of Thrones é a minha série favorita. Por mais que o final tenha deixado a desejar ela continua sendo a série que eu mais gostei.</p>
+        </article>
+        <article class="coisa">
+            <h3>Qual jogo você mais gosta?</h3>
+            <p>Sem duvidas Skyrim, não tem nem o que falar a respeito desse. Eu ja passei muito tempo jogando e continuo a jogar até hoje mesmo tendo feito quase tudo o que é possível nesse jogo</p>
+        </article>
+    </section>
+
+     <script type="text/javascript">
+        TweenMax.to(".overlay h1", 2, {
+              opacity: 0,
+              y: -60,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.to(".overlay", 2, {
+              delay: 1,
+              top: "-100%",
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".nav ul li", 1, {
+              delay: 2.4, opacity: 0, y: 20, ease: Expo.easeInOut
+        }, 0.2)
+
+        TweenMax.from(".header h1", 2, {
+              delay: 3.2,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+        TweenMax.from(".minhas-info p", 3, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+        TweenMax.from(".minhas-info img", 3, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".escolas", 3, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".vida-academica h2 ", 4, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".vida-academica p ", 5, {
+              delay: 3.4,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+        </script>
+</body>
