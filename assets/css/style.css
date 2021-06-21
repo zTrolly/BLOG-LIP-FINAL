@@ -48,7 +48,7 @@ table {
     --color2: #737284;
     --color3: #ffd545;
     --color4: #ff971e;
-    --color5: #d34833;
+    --color5: #241e1d;
 }
 
 
@@ -63,6 +63,11 @@ html, body {
 body{
     background: url("../imgs/banner-bg3.jpg") no-repeat 50% 50%;
     background-size:cover ;
+}
+
+body span{
+
+    color: var(--color3);
 }
 .logo {
     line-height: 40px;
@@ -132,11 +137,11 @@ body{
 }
 .side-strip::before{
     content: "<";
-    color: #ffd545;
+    color: var(--color3);
 }
 .side-strip::after{
     content: "/>";
-    color: #ffd545;
+    color: var(--color3);
 }
 
 .header {
@@ -203,7 +208,7 @@ body{
     height: 100vh;
     background: var(--color1);
     top: 0%;
-    color: #ffd545;
+    color: var(--color3);
 }
 
 .overlay h1 {
@@ -216,3 +221,13 @@ body{
     letter-spacing: 12px;
 }
 
+::-webkit-scrollbar{
+    background-color: var(--color1);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color3);
+    width: 10px;
+    border-radius: 15px;
+}
