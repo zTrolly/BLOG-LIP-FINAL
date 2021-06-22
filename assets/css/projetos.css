@@ -143,6 +143,7 @@ table {
     font-family: Poppins;
     margin:  0 auto;
     max-width: 750px;
+    line-height: 30px;
 }
 
 .intro p::before{
@@ -161,7 +162,7 @@ table {
     content: "</p>";
     position: absolute;
     color: var(--color2);
-    top: 55%;
+    top: 63%;
     left: 78%;
     font-style: italic;
     font-family: "Indie Flower";
@@ -182,6 +183,7 @@ table {
 /*PARTE PROJETOS*/
 .parte-projetos{
     margin-top: 60px;
+    color: #fff;
 }
 .parte-projetos h2{
     font-size: 48px;
@@ -196,7 +198,7 @@ table {
 .parte-projetos h2::after{
     content: "</h2>";
     right: 14%;
-    transform: translateY(-10px);
+    transform: translateY(30px);
     position:absolute;
     color: var(--color2);
     font-style: italic;
@@ -205,9 +207,9 @@ table {
     opacity: 60%;
 }
 .parte-projetos h2::before{
-    content: "</h2>";
+    content: "<h2>";
     left: 14%;
-    transform: translateY(30px);
+    transform: translateY(-10px);
     position:absolute;
     color: var(--color2);
     font-style: italic;
@@ -223,15 +225,97 @@ table {
 }
 .iframe-codigo iframe{
         border-radius: 15px;
+
 }
 
-.iframe-codigo::after{
-        content: "<-- Iframe com código em C, utilizado no ínicio de AEDS ";
+.aeds .iframe-codigo::after{
+        content: "<-- Colocar um iframe com código em C, utilizado no ínicio de AEDS ";
         position: absolute;
-        max-width: 250px;
+        max-width: 150px;
         font-style: italic;
         font-family: "Reenie Beanie";
         color: var(--color2);
         transform: rotate(-24deg);
         opacity: 60%;
+}
+
+.aeds{
+    margin-bottom: 60px;
+}
+
+
+/*DIW PROJETO*/
+.projetos-diw p{
+    line-height: 30px; 
+    margin-bottom: 25px;
+}
+
+
+.projetos-diw p::before{
+    content: "<p>";
+    position: absolute;
+    color: var(--color2);
+    font-style: italic;
+    left: 6%;
+    font-size: 15px;
+    font-family: "Indie Flower";
+    opacity: 60%;
+}
+
+.projetos-diw p::after{
+    content: "</p>";
+    position: absolute;
+    left: 6%;
+    transform: translateY(10px);
+    color: var(--color2);
+    font-style: italic;
+    font-family: "Indie Flower";
+    font-size: 15px;
+    opacity: 60%;
+}
+
+.primeiro-site{
+    margin-top: 30px;
+}
+
+.primeiro-site img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.primeiro-site::before{
+    content: "Como eu achava esse site bonito??";
+        position: absolute;
+        max-width: 150px;
+        font-style: italic;
+        font-family: "Reenie Beanie";
+        color: var(--color2);
+        transform: rotate(-90deg);
+        left: 1%;
+       bottom: -170%;
+        opacity: 60%;
+}
+
+.ultimo-site{
+    margin-top: 30px;
+}
+
+.ultimo-site img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.diw{
+    margin-bottom: 60px;
+}
+
+
+/*LIP PROJETO*/
+
+.lip h2::after{
+    right: 10%;
+}
+.lip h2::before{
+    left: 11%;
 }
