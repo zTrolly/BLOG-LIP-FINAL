@@ -154,8 +154,7 @@ main{
     content: "<p>";
     position: absolute;
     color: var(--color2);
-    top: 35%;
-    left: 18%;
+    top: -12%;
     font-style: italic;
     font-size: 15px;
     font-family: "Indie Flower";
@@ -166,7 +165,7 @@ main{
     content: "</p>";
     position: absolute;
     color: var(--color2);
-    top: 63%;
+    top: 90%;
     left: 78%;
     font-style: italic;
     font-family: "Indie Flower";
@@ -261,17 +260,18 @@ main{
     position: absolute;
     color: var(--color2);
     font-style: italic;
-    left: 6%;
+    left: 0%;
     font-size: 15px;
     font-family: "Indie Flower";
     opacity: 60%;
+    top: -10%;
 }
 
 .projetos-diw p::after{
     content: "</p>";
     position: absolute;
-    left: 6%;
-    transform: translateY(10px);
+    left: 0%;
+    transform: translateY(20px);
     color: var(--color2);
     font-style: italic;
     font-family: "Indie Flower";
@@ -310,4 +310,47 @@ main{
 }
 .lip h2::before{
     left: 11%;
+}
+
+.primeiro-jogo{
+    line-height: 30px;
+}
+
+.primeiro-jogo h3{
+    margin-top: 30px;
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.iframe-jogo a{
+    text-decoration: none;
+    color: var(--color3);
+    transition: all .4s;
+}
+
+.iframe-jogo a:hover{
+    color: var(--color4);
+}
+
+
+.iframe-jogo::after{
+    content: "<-- Sou ruim no meu próprio jogo :(";
+    position: absolute;
+    max-width: 100px;
+    right: -3%;
+    font-style: italic;
+    font-family: "Reenie Beanie";
+    color: var(--color2);
+    transform: rotate(-24deg);
+    opacity: 60%;
+}
+
+.txt-lip{
+    line-height: 30px;
+    margin-top: 30px;
 }
