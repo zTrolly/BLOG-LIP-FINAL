@@ -66,6 +66,10 @@ table {
     --color5: #d34833;
 }
 
+main{
+    overflow: hidden;
+}
+
 .overlay {
     z-index: 1;
     position: absolute;
@@ -231,7 +235,8 @@ table {
 .aeds .iframe-codigo::after{
         content: "<-- Colocar um iframe com código em C, utilizado no ínicio de AEDS ";
         position: absolute;
-        max-width: 150px;
+        max-width: 100px;
+        right: -5%;
         font-style: italic;
         font-family: "Reenie Beanie";
         color: var(--color2);
@@ -282,19 +287,6 @@ table {
     width: 100%;
     border-radius: 15px;
     margin-top: 15px;
-}
-
-.primeiro-site::before{
-    content: "Como eu achava esse site bonito??";
-        position: absolute;
-        max-width: 150px;
-        font-style: italic;
-        font-family: "Reenie Beanie";
-        color: var(--color2);
-        transform: rotate(-90deg);
-        left: 1%;
-       bottom: -170%;
-        opacity: 60%;
 }
 
 .ultimo-site{
