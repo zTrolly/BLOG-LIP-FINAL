@@ -173,16 +173,8 @@ main{
     opacity: 60%;
 }
 
-.anotacoes::after{
-    content: "/*    Colocar um breve texto falando sobre minha evolução no mundo da computação IMPORTANTE!!!    */";
-    position: absolute;
-    max-width: 250px;
-    font-style: italic;
-    font-family: "Reenie Beanie";
-    color: var(--color2);
-    transform: rotate(-24deg);
-    opacity: 60%;
-}
+
+
 /*PARTE PROJETOS*/
 .parte-projetos{
     margin-top: 60px;
@@ -231,7 +223,7 @@ main{
 
 }
 
-.aeds .iframe-codigo::after{
+/* .aeds .iframe-codigo::after{
         content: "<-- Colocar um iframe com código em C, utilizado no ínicio de AEDS ";
         position: absolute;
         max-width: 100px;
@@ -241,7 +233,7 @@ main{
         color: var(--color2);
         transform: rotate(-24deg);
         opacity: 60%;
-}
+} */
 
 .aeds{
     margin-bottom: 60px;
@@ -325,6 +317,7 @@ main{
     margin-bottom: 10px;
     text-align: center;
     font-size: 30px;
+   
 }
 
 .iframe-jogo a{
@@ -338,7 +331,7 @@ main{
 }
 
 
-.iframe-jogo::after{
+/* .iframe-jogo::after{
     content: "<-- Sou ruim no meu próprio jogo :(";
     position: absolute;
     max-width: 100px;
@@ -348,9 +341,10 @@ main{
     color: var(--color2);
     transform: rotate(-24deg);
     opacity: 60%;
-}
+} */
 
 .txt-lip{
     line-height: 30px;
     margin-top: 30px;
+    color: #fff;
 }
