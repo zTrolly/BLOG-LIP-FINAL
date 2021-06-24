@@ -55,6 +55,7 @@
                 <input type="submit" value="Submit" class="form-buttom" />
             </form>
           </section>
+          <p class="footer" style="text-align: center; color: #fff; opacity: 75%;">Assim que o formulário for enviado a página sera recarregada, não se preocupe não aconteceu erro algum!</p>
         <script type="text/javascript">
 
         TweenMax.to(".overlay h1", 2, {
@@ -93,6 +94,12 @@
         })
 
         TweenMax.from(".form-contato", 2, {
+              delay: 3.6,
+              opacity: 0,
+              y: 20,
+              ease: Expo.easeInOut
+        })
+        TweenMax.from(".footer", 2, {
               delay: 3.6,
               opacity: 0,
               y: 20,
