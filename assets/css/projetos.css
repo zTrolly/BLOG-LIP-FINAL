@@ -348,3 +348,65 @@ main{
     margin-top: 30px;
     color: #fff;
 }
+
+.titulo-parte-arduino h3{
+    font-weight: bolder;
+    letter-spacing: 12px;
+    color: var(--color3);
+    font-family: "Wire One";
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.arduino-explicacao{
+    box-sizing: border-box;
+    border: 1px var(--color3) solid;
+    padding: 10px;
+}
+
+.parte-arduino{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.arduino-explicacao a{
+    text-decoration: none;
+    color: var(--color3);
+    transition: all .4s;
+
+}
+
+.arduino-explicacao a:hover{
+    color: var(--color4);
+}
+
+/*CONCLUSÃO*/
+.parte-projetos .conclusao h2::after{
+    content: "</h2>";
+    right: 30%;
+    transform: translateY(30px);
+    position:absolute;
+    color: var(--color2);
+    font-style: italic;
+    font-family: "Caveat";
+    font-size: 15px;
+    opacity: 60%;
+}
+.parte-projetos .conclusao h2::before{
+    content: "<h2>";
+    left: 30%;
+    transform: translateY(-10px);
+    position:absolute;
+    color: var(--color2);
+    font-style: italic;
+    font-family: "Caveat";
+    font-size: 15px;
+    opacity: 60%;
+}
+
+.conclusao{
+    margin-top: 30px;
+    line-height: 30px;
+}
