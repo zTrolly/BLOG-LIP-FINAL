@@ -246,7 +246,6 @@ main{
     margin-bottom: 25px;
 }
 
-
 .projetos-diw p::before{
     content: "<p>";
     position: absolute;
@@ -294,9 +293,19 @@ main{
     margin-bottom: 60px;
 }
 
+.diw a{
+    text-decoration: none;
+    color: var(--color3);
+    transition: all .4s;
+}
+
+.diw a:hover{
+    color: var(--color4);
+}
+
+
 
 /*LIP PROJETO*/
-
 .lip h2::after{
     right: 10%;
 }
@@ -320,28 +329,15 @@ main{
    
 }
 
-.iframe-jogo a{
+.iframe-jogo ,.lip a{
     text-decoration: none;
     color: var(--color3);
     transition: all .4s;
 }
 
-.iframe-jogo a:hover{
+.iframe-jogo, .lip a:hover{
     color: var(--color4);
 }
-
-
-/* .iframe-jogo::after{
-    content: "<-- Sou ruim no meu próprio jogo :(";
-    position: absolute;
-    max-width: 100px;
-    right: -3%;
-    font-style: italic;
-    font-family: "Reenie Beanie";
-    color: var(--color2);
-    transform: rotate(-24deg);
-    opacity: 60%;
-} */
 
 .txt-lip{
     line-height: 30px;
@@ -382,6 +378,8 @@ main{
     color: var(--color4);
 }
 
+
+
 /*CONCLUSÃO*/
 .parte-projetos .conclusao h2::after{
     content: "</h2>";
@@ -405,7 +403,6 @@ main{
     font-size: 15px;
     opacity: 60%;
 }
-
 .conclusao{
     margin-top: 30px;
     line-height: 30px;
